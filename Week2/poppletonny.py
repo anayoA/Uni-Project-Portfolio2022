@@ -12,9 +12,14 @@ students in groups of 20 the output would be:"""
 stunum = input('How many students? ')
 group = input('Required group size? ')
 val1 = int(stunum) // int(group)
-print('The number of full groups is: ' + str(val1))
-
-#number of students left over is..
-
 val2 = int(stunum) % int(group)
-print('The number of students left over in the small group is: ' + str(val2))
+
+if val2 == 1:
+    print('There are',val1,'groups.')
+    print('There is one student left over')
+else:
+    print('The number of full groups is: ' + str(val1))
+    print('The number of students left over in the small group is: ' + str(val2))
+
+
+
