@@ -5,7 +5,7 @@ def letcheck(a):
     for letter in a:
         if letter.islower():
             lower += 1
-        else:
+        if letter.isupper():
             upper += 1
     print('The number of lowercase letters is', lower)
     print('The number of uppercase letters is', upper)
