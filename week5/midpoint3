@@ -1,0 +1,7 @@
+while True:
+    pswrd = input('Greetings! What is the password? ')
+    if pswrd == 'parrot':
+        print('Correct! You may enter.')
+        break
+    else:
+            print('Incorrect! You may try again.')
