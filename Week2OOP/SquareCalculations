@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class SquareCalculations
+{
+    public static void main(String[] args)
+    {
+        int length, perimeter, area;
+        Scanner myScan = new Scanner(System.in);
+        System.out.print("How long is one side of your square? Give just the integer: ");
+        length = myScan.nextInt();
+        perimeter = length * 4;
+        area = length * length;
+        System.out.println("The perimeter is " + perimeter +"cm.");
+        System.out.println("The area is " + area +"cm2.");
+    }
+}
