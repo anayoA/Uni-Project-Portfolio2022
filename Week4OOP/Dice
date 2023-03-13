@@ -1,0 +1,32 @@
+import java.util.Random;
+import java.util.Scanner;
+import java.util.Random;
+public class Dice
+{
+    public static void main(String[] args)
+    {
+        int dieA, dieB, roll1 = 0, count = 0, count2 = 0, rollnum = 1, rollnum2 = 1;
+        Scanner myScan = new Scanner(System.in);
+        Random roll = new Random();
+        System.out.println("How many sides does die A have?");
+        dieA = myScan.nextInt();
+        System.out.println("How many sides does die B have?");
+        dieB = myScan.nextInt();
+
+        while (count <= 2)
+        {
+            roll1 = roll.nextInt(dieA);
+            System.out.println("Dice A roll number " + rollnum + ": " + roll1);
+            count++;
+            rollnum++;
+        }
+        while (count2 <= 2)
+        {
+            roll1 = roll.nextInt(dieB);
+            System.out.println("Dice B roll number " + rollnum2 + ": " + roll1);
+            count2++;
+            rollnum2++;
+        }
+        //here is where im confused.
+    }
+}
